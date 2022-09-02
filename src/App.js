@@ -1,5 +1,5 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './estilos/calc.css';
+import 'bootstrap/dist/css/bootstrap.min.scss';
+import './styles/calc.scss';
 import ContainerCalc from "./components/organims/containerCalc";
 
 function App() {
@@ -9,4 +9,4 @@ function App() {
   );
 }
 
-export default App;
+export default App; //estudiar como integrar sass o less a mi proyecto.

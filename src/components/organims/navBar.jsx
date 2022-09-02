@@ -1,19 +1,23 @@
 import { Container } from "react-bootstrap"
 import { Navbar } from "react-bootstrap"
 import { Nav } from "react-bootstrap"
+import Links from "../atoms/enlaces"
 
 function NavBar() {
+  const routes = [
+    {name : 'Inicio', path : '/home'},
+    {name : 'Acerca de mi', path : '/acercaDeMi'},
+    {name : 'Conocimientos', path : '/conocimientos'},
+    {name : 'Servicios', path : '/servicios'},
+    {name : 'Proyectos', path : '/proyectos'},
+    {name : 'contactame', path : '/contactame'}
+  ];
     return(
     <Navbar bg="dark" variant="dark">
         <Container>
           <Navbar.Brand href="#home">JCarlos</Navbar.Brand>
-            <Nav className="me-auto">
-            <Nav.Link href="#home">Inicio</Nav.Link>
-            <Nav.Link href="#features">Acerca de mi</Nav.Link>
-            <Nav.Link href="#features">Conocimientos</Nav.Link>
-            <Nav.Link href="#features">Servicios</Nav.Link>
-            <Nav.Link href="#features">Proyectos</Nav.Link>
-            <Nav.Link href="#pricing">Contactame</Nav.Link>
+          <Nav className="me-auto">
+            <Links routes = {routes}></Links>
           </Nav>
         </Container>
     </Navbar>
