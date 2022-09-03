@@ -10,7 +10,7 @@ function NavBar() {
     {name : 'Conocimientos', path : '/conocimientos'},
     {name : 'Servicios', path : '/servicios'},
     {name : 'Proyectos', path : '/proyectos'},
-    {name : 'contactame', path : '/contactame'}
+    {name : 'Contactame', path : '/contactame'}
   ];
     return(
     <Navbar bg="dark" variant="dark">
